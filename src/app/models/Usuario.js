@@ -10,6 +10,7 @@ class Usuario extends Model {
             dataNascimento: DataTypes.DATE,
             telefone: DataTypes.STRING,
             status: DataTypes.ENUM('ativo', 'inativo'),
+            tipo: DataTypes.ENUM('admin', 'usuario')
         }, {
             sequelize,
             tableName: 'usuarios',
